@@ -40,9 +40,12 @@ Window {
     modality: Qt.ApplicationModal
     flags: Qt.Window | Qt.FramelessWindowHint
     property alias title: dialogTitle.text
-    property alias content: dialogContent.text
+    property alias text: dialogContent.text
+    property alias content: root.text
     property alias cancelVisible: cancelButton.visible
     property alias okVisible: okButton.visible
+    property alias textArea: dialogContent
+    property var icon
 
     // same signals as Dialog has
     signal accepted()
@@ -54,8 +57,8 @@ Window {
     }
 
     // TODO: implement without hardcoding sizes
-    width: 600
-    height: 480
+    width:  480
+    height: 280
 
     ColumnLayout {
         id: mainLayout
@@ -81,6 +84,7 @@ Window {
             TextArea {
                 id : dialogContent
                 Layout.fillWidth: true
+                Layout.fillHeight: true
                 font.family: "Arial"
                 textFormat: TextEdit.AutoText
                 readOnly: true
@@ -105,8 +109,9 @@ Window {
                 text: qsTr("Ok")
                 KeyNavigation.tab: cancelButton
                 onClicked: {
-                    root.accepted()
                     root.close()
+                    root.accepted()
+
                 }
             }
 
@@ -120,8 +125,8 @@ Window {
                 pressedColor: "#FF4304"
                 text: qsTr("Cancel")
                 onClicked: {
-                    root.rejected()
                     root.close()
+                    root.rejected()
                 }
             }
         }
