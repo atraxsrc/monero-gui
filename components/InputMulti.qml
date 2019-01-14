@@ -51,6 +51,9 @@ TextArea {
     selectionColor: MoneroComponents.Style.dimmedFontColor
     selectedTextColor: MoneroComponents.Style.defaultFontColor
 
+    property int minimumHeight: 100 * scaleRatio
+    height: contentHeight > minimumHeight ? contentHeight : minimumHeight
+
     onTextChanged: {
         if(addressValidation){
             // js replacement for `RegExpValidator { regExp: /[0-9A-Fa-f]{95}/g }`
