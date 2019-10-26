@@ -101,7 +101,7 @@
     <message>
         <location filename="../pages/AddressBook.qml" line="314"/>
         <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                                 Address</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                                 Osoite</translation>
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="353"/>
@@ -137,7 +137,7 @@
     <message>
         <location filename="../pages/AddressBook.qml" line="392"/>
         <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                                 Description</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                                 Kuvaus</translation>
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="394"/>
@@ -221,7 +221,7 @@
     <message>
         <location filename="../pages/History.qml" line="204"/>
         <source>Date to</source>
-        <translation type="unfinished">Päättyen (pvm)</translation>
+        <translation>Päättyen (pvm)</translation>
     </message>
     <message>
         <location filename="../pages/History.qml" line="311"/>
@@ -247,7 +247,7 @@
     <message>
         <location filename="../pages/History.qml" line="231"/>
         <source>Sort by</source>
-        <translation type="unfinished">Järjestä (minkä mukaan)</translation>
+        <translation>Järjestä (minkä mukaan)</translation>
     </message>
     <message>
         <location filename="../pages/History.qml" line="252"/>
@@ -328,7 +328,7 @@
     <message>
         <location filename="../pages/History.qml" line="1101"/>
         <source>Click to reveal</source>
-        <translation type="unfinished"></translation>
+        <translation>Klikkaa näyttääksesi</translation>
     </message>
     <message>
         <location filename="../pages/History.qml" line="1131"/>
@@ -536,7 +536,7 @@
     <message>
         <location filename="../pages/Keys.qml" line="250"/>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="270"/>
@@ -786,7 +786,7 @@
     <message>
         <location filename="../pages/merchant/Merchant.qml" line="158"/>
         <source>&lt;style&gt;p{font-size:14px;}&lt;/style&gt;&lt;p&gt;This page will automatically scan the blockchain and the tx pool for incoming transactions using the QR code.&lt;/p&gt;&lt;p&gt;It&apos;s up to you whether to accept unconfirmed transactions or not. It is likely they&apos;ll be confirmed in short order, but there is still a possibility they might not, so for larger values you may want to wait for one or more confirmation(s).&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;style&gt;p{font-size:14px;}&lt;/style&gt;&lt;p&gt;Tämä sivu skannaa automaattisesti lohkoketjua ja tx poolia saapuville transaktioille käyttäen QR-koodia.&lt;/p&gt;&lt;p&gt;Se on sinusta kiinni, hyväksytkö vahvistamattomat transaktiot vai et. On todennäköistä, että ne vahvistetaan pian, mutta on silti mahdollista, että ei. Joten suurimmille summille sinun kannattanee odottaa yksi tai useampi vahvistus.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../pages/merchant/Merchant.qml" line="169"/>
@@ -1100,17 +1100,17 @@ Louhimalla voit myös ansaita hieman Moneroa. Tietokoneesi luo louhiessa tiivist
     <message>
         <location filename="../components/PasswordDialog.qml" line="143"/>
         <source>Please enter new wallet password</source>
-        <translation type="unfinished"></translation>
+        <translation>Syötä uusi lompakon salasana</translation>
     </message>
     <message>
         <location filename="../components/PasswordDialog.qml" line="145"/>
         <source>wallet password</source>
-        <translation type="unfinished"></translation>
+        <translation>lompakon salasana</translation>
     </message>
     <message>
         <location filename="../components/PasswordDialog.qml" line="145"/>
         <source>wallet device passphrase</source>
-        <translation type="unfinished"></translation>
+        <translation>lompakko-laitteen salalause</translation>
     </message>
     <message>
         <location filename="../components/PasswordDialog.qml" line="146"/>
@@ -1125,7 +1125,7 @@ Louhimalla voit myös ansaita hieman Moneroa. Tietokoneesi luo louhiessa tiivist
     <message>
         <location filename="../components/PasswordDialog.qml" line="158"/>
         <source>Warning: passphrase entry on host is a security risk as it can be captured by malware. It is advised to prefer device-based passphrase entry.</source>
-        <translation type="unfinished">Varoitus: salasanan kirjoitus tietokoneella on tietoturvariski, koska haittaohjelmat voivat kaapata sen. On suositeltavaa kirjoittaa salasana rautalompakolla.</translation>
+        <translation>Varoitus: salasanan kirjoitus tietokoneella on tietoturvariski, koska haittaohjelmat voivat kaapata sen. On suositeltavaa kirjoittaa salasana rautalompakolla.</translation>
     </message>
     <message>
         <location filename="../components/PasswordDialog.qml" line="187"/>
@@ -1135,12 +1135,12 @@ Louhimalla voit myös ansaita hieman Moneroa. Tietokoneesi luo louhiessa tiivist
     <message>
         <location filename="../components/PasswordDialog.qml" line="290"/>
         <source>Please confirm new password</source>
-        <translation type="unfinished">Vahvista uusi salasana</translation>
+        <translation>Vahvista uusi salasana</translation>
     </message>
     <message>
         <location filename="../components/PasswordDialog.qml" line="290"/>
         <source>Please confirm wallet device passphrase</source>
-        <translation type="unfinished"></translation>
+        <translation>Varmista lompakko-laitteen salalause</translation>
     </message>
     <message>
         <location filename="../components/PasswordDialog.qml" line="393"/>
@@ -1150,7 +1150,7 @@ Louhimalla voit myös ansaita hieman Moneroa. Tietokoneesi luo louhiessa tiivist
     <message>
         <location filename="../components/PasswordDialog.qml" line="410"/>
         <source>Ok</source>
-        <translation type="unfinished">Ok</translation>
+        <translation>Ok</translation>
     </message>
 </context>
 <context>
@@ -1380,7 +1380,7 @@ Vanha lompakkovälimuistitiedosto nimetään uudelleen ja voidaan palauttaa myö
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="98"/>
         <source>Lock wallet on inactivity</source>
-        <translation type="unfinished"></translation>
+        <translation>Lukitse lompakko jos se on epäaktiivinen</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="86"/>
@@ -1410,27 +1410,27 @@ Vanha lompakkovälimuistitiedosto nimetään uudelleen ja voidaan palauttaa myö
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="190"/>
         <source>Price source</source>
-        <translation type="unfinished"></translation>
+        <translation>Hinnan lähde</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="214"/>
         <source>Currency</source>
-        <translation type="unfinished"></translation>
+        <translation>Valuutta</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="242"/>
         <source>Enabling price conversion exposes your IP address to the selected price source.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ottaessasi käyttöön hinnan muuntamisen, paljastuu IP-osoitteesi valitulle hinnan lähteelle.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="249"/>
         <source>Confirm and enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Hyväksy ja ota käyttöön</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="264"/>
         <source>Change language</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda kieltä</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="276"/>
@@ -1496,12 +1496,12 @@ Vanha lompakkovälimuistitiedosto nimetään uudelleen ja voidaan palauttaa myö
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="305"/>
         <source>Remote node updated. Trusted daemon has been reset. Mark again, if desired.</source>
-        <translation type="unfinished"></translation>
+        <translation>Etäverkkosolmu päivitetty. Luotettu daemon on resesoitu. Merkitse uudelleen, jos haluat.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="317"/>
         <source>Daemon username</source>
-        <translation type="unfinished"></translation>
+        <translation>Daemonin käyttäjänimi</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="319"/>
@@ -1512,7 +1512,7 @@ Vanha lompakkovälimuistitiedosto nimetään uudelleen ja voidaan palauttaa myö
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="328"/>
         <source>Daemon password</source>
-        <translation type="unfinished"></translation>
+        <translation>Daemonin salasana</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="330"/>
@@ -1522,7 +1522,7 @@ Vanha lompakkovälimuistitiedosto nimetään uudelleen ja voidaan palauttaa myö
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="345"/>
         <source>Mark as Trusted Daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Merkitse Tunnetuksi Daemoniksi</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="352"/>
@@ -1532,12 +1532,12 @@ Vanha lompakkovälimuistitiedosto nimetään uudelleen ja voidaan palauttaa myö
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="375"/>
         <source>Start daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Käytnnistä daemon</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="375"/>
         <source>Stop daemon</source>
-        <translation type="unfinished">Pysäytä daemon</translation>
+        <translation>Pysäytä daemon</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="394"/>
@@ -1547,7 +1547,7 @@ Vanha lompakkovälimuistitiedosto nimetään uudelleen ja voidaan palauttaa myö
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="394"/>
         <source> &lt;a href=&apos;#&apos;&gt; (change)&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;a href=&apos;#&apos;&gt; (vaihda)&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="395"/>
@@ -1595,7 +1595,7 @@ Vanha lompakkovälimuistitiedosto nimetään uudelleen ja voidaan palauttaa myö
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="147"/>
         <source>Creates a new wallet that can only view and initiate transactions, but requires a spendable wallet to sign transactions before sending.</source>
-        <translation type="unfinished"></translation>
+        <translation>Luo uuden lompakon, joka voi ainoastaan katsoa ja aloittaa transaktioita, mutta vaatii kulutettavan lompakon transaktioiden allekirjoittamiseen ennen lähetystä.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="153"/>
@@ -1612,7 +1612,9 @@ Vanha lompakkovälimuistitiedosto nimetään uudelleen ja voidaan palauttaa myö
         <source>The view only wallet has been created with the same password as the current wallet. You can open it by closing this current wallet, clicking the &quot;Open wallet from file&quot; option, and selecting the view wallet in: 
 %1
 You can change the password in the wallet settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vain katseltava lompakko on luotu samalla salasanalla kuin nykyinen lompakko. Voit avata sen sulkemalla nykyisen lompakon, klikkaamalla &quot;Avaa lompakko tiedostosta&quot; ja valitsemalla katseltava lompakko:
+%1
+Voit vaihtaa salasanan lompakon asetuksista.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="202"/>
@@ -1627,7 +1629,7 @@ You can change the password in the wallet settings.</source>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="218"/>
         <source>Show seed</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä seed</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="256"/>
@@ -1669,17 +1671,17 @@ You can change the password in the wallet settings.</source>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="322"/>
         <source>Change wallet password</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda lompakon salasana</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="332"/>
         <source>Change the password of your wallet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda lompakkosi salasana.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="338"/>
         <source>Change password</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda salasana</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="345"/>
@@ -1897,28 +1899,28 @@ You can change the password in the wallet settings.</source>
         <location filename="../pages/Sign.qml" line="202"/>
         <location filename="../pages/Sign.qml" line="316"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiedosto</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="171"/>
         <source>Sign file</source>
-        <translation type="unfinished"></translation>
+        <translation>Allekirjoita tiedosto</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="171"/>
         <source>Sign message</source>
-        <translation type="unfinished"></translation>
+        <translation>Allekirjoita viesti</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="186"/>
         <source>Enter a message to sign</source>
-        <translation type="unfinished"></translation>
+        <translation>Syötä allekirjoitettava viesti</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="204"/>
         <location filename="../pages/Sign.qml" line="318"/>
         <source>Enter path to file</source>
-        <translation type="unfinished"></translation>
+        <translation>Syötä polku tiedostolle</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="216"/>
@@ -1929,28 +1931,28 @@ You can change the password in the wallet settings.</source>
     <message>
         <location filename="../pages/Sign.qml" line="232"/>
         <source>Click [Sign Message] to generate signature</source>
-        <translation type="unfinished"></translation>
+        <translation>Klikkaa [Allekirjoita viesti] generoidaksesi allekirjoituksen</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="232"/>
         <source>Click [Sign File] to generate signature</source>
-        <translation type="unfinished"></translation>
+        <translation>Klikkaa [Allekirjoita tiedosto] generoidaksesi allekirjoituksen</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="246"/>
         <location filename="../pages/Sign.qml" line="369"/>
         <source>Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>Tyhjennä</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="259"/>
         <source>Sign Message</source>
-        <translation type="unfinished"></translation>
+        <translation>Allekirjoita viesti</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="273"/>
         <source>Sign File</source>
-        <translation type="unfinished"></translation>
+        <translation>Allekirjoita tiedosto</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="291"/>
@@ -1965,7 +1967,7 @@ You can change the password in the wallet settings.</source>
     <message>
         <location filename="../pages/Sign.qml" line="301"/>
         <source>Enter the message to verify</source>
-        <translation type="unfinished"></translation>
+        <translation>Syötä viesti varmistaaksesi</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="341"/>
@@ -1975,22 +1977,22 @@ You can change the password in the wallet settings.</source>
     <message>
         <location filename="../pages/Sign.qml" line="344"/>
         <source>Enter the Monero Address (example: 44AFFq5kSiGBoZ...)</source>
-        <translation type="unfinished"></translation>
+        <translation>Syötä Monero-osoite (esimerkiksi: 44AFFq5kSiGBoZ...)</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="355"/>
         <source>Enter the signature to verify</source>
-        <translation type="unfinished"></translation>
+        <translation>Syötä allekirjoitus varmistaaksesi</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="384"/>
         <source>Verify File</source>
-        <translation type="unfinished"></translation>
+        <translation>Varmista tiedosto</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="396"/>
         <source>Verify Message</source>
-        <translation type="unfinished"></translation>
+        <translation>Varmista viesti</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="408"/>
@@ -2029,7 +2031,7 @@ You can change the password in the wallet settings.</source>
     <message>
         <location filename="../components/StandardDialog.qml" line="178"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -2185,12 +2187,12 @@ You can change the password in the wallet settings.</source>
     <message>
         <location filename="../pages/Transfer.qml" line="55"/>
         <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #FF6C3C; font-size: 14px;}&lt;/style&gt;&lt;font size=&apos;2&apos;&gt; (&lt;/font&gt;&lt;a href=&apos;#&apos;&gt;Start daemon&lt;/a&gt;&lt;font size=&apos;2&apos;&gt;)&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #FF6C3C; font-size: 14px;}&lt;/style&gt;&lt;font size=&apos;2&apos;&gt; (&lt;/font&gt;&lt;a href=&apos;#&apos;&gt;Käynnistä daemon&lt;/a&gt;&lt;font size=&apos;2&apos;&gt;)&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="160"/>
         <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                                   Amount &lt;font size=&apos;2&apos;&gt;  ( &lt;/font&gt; &lt;a href=&apos;#&apos;&gt;Change account&lt;/a&gt;&lt;font size=&apos;2&apos;&gt; )&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                                   Määrä &lt;font size=&apos;2&apos;&gt;  ( &lt;/font&gt; &lt;a href=&apos;#&apos;&gt;Vaihda tiliä&lt;/a&gt;&lt;font size=&apos;2&apos;&gt; )&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="207"/>
@@ -2200,7 +2202,7 @@ You can change the password in the wallet settings.</source>
     <message>
         <location filename="../pages/Transfer.qml" line="232"/>
         <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                Address &lt;font size=&apos;2&apos;&gt;  ( &lt;/font&gt; &lt;a href=&apos;#&apos;&gt;Address book&lt;/a&gt;&lt;font size=&apos;2&apos;&gt; )&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                Osoite &lt;font size=&apos;2&apos;&gt;  ( &lt;/font&gt; &lt;a href=&apos;#&apos;&gt;Osoitekirja&lt;/a&gt;&lt;font size=&apos;2&apos;&gt; )&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="321"/>
@@ -2210,22 +2212,22 @@ You can change the password in the wallet settings.</source>
     <message>
         <location filename="../pages/Transfer.qml" line="338"/>
         <source>Add description</source>
-        <translation type="unfinished"></translation>
+        <translation>Syötä kuvaus</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="365"/>
         <source>Add payment ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Syötä maksun ID</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="377"/>
         <source>64 hexadecimal characters</source>
-        <translation type="unfinished"></translation>
+        <translation>64 heksadesimaalin merkit</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="389"/>
         <source>You can enable transfers with payment ID on the settings page.</source>
-        <translation type="unfinished"></translation>
+        <translation>Voit ottaa käyttöön siirrot maksu ID:iden kanssa asetukset-sivulta.</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="459"/>
@@ -2318,22 +2320,22 @@ Please upgrade or connect to another daemon</source>
     <message>
         <location filename="../pages/Transfer.qml" line="710"/>
         <source>Waiting on daemon synchronization to finish.</source>
-        <translation type="unfinished"></translation>
+        <translation>Odotetaan, että daemonin synkronointi on valmis.</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="743"/>
         <source>Wallet is view-only and sends are not possible.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lompakko on vain katseltava -lompakko. Lähetykset eivät ole mahdollisia.</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="749"/>
         <source>Amount is more than unlocked balance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Määrä on enemmän kuin käytettävä saldo.</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="761"/>
         <source>Transaction information is incorrect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Transaktion informaatio on väärin.</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="91"/>
@@ -2448,7 +2450,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="42"/>
         <source>Strength: </source>
-        <translation type="unfinished"></translation>
+        <translation>Vahvuus: </translation>
     </message>
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="53"/>
@@ -2474,22 +2476,22 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="86"/>
         <source>This password cannot be recovered. If you forget it then the wallet will have to be restored from your %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tämä salasana ei ole palautettavissa. Jos unohdat sen, lompakko täytyy palauttaa sinun %1.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="86"/>
         <source>25 word mnemonic seed</source>
-        <translation type="unfinished"></translation>
+        <translation>25 sanan mnemonic siemen</translation>
     </message>
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="86"/>
         <source>hardware wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>laitelompakko</translation>
     </message>
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="90"/>
         <source>&lt;b&gt;Enter a strong password&lt;/b&gt; (Using letters, numbers, and/or symbols).</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Syötä vahva salasana&lt;/b&gt; (Käyttäen kirjaimia, numeroita ja/tai symboleja).</translation>
     </message>
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="144"/>
@@ -2499,7 +2501,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="201"/>
         <source>Password (confirm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Salasana (varmista)</translation>
     </message>
 </context>
 <context>
@@ -2512,12 +2514,12 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardController.qml" line="447"/>
         <source>Please proceed to the device...</source>
-        <translation type="unfinished"></translation>
+        <translation>Siirry laitteeseesi...</translation>
     </message>
     <message>
         <location filename="../wizard/WizardController.qml" line="451"/>
         <source>Creating wallet from device...</source>
-        <translation type="unfinished"></translation>
+        <translation>Luodaan lompakkoa laitteesta...</translation>
     </message>
     <message>
         <location filename="../wizard/WizardController.qml" line="452"/>
@@ -2525,7 +2527,10 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
 
 Please check your hardware wallet –
 your input may be required.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+Tarkista laitelompakkosi –
+se saattaa vaatia sinulta toimintoja.</translation>
     </message>
 </context>
 <context>
@@ -2533,7 +2538,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="51"/>
         <source>Choose your hardware device</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse laitelompakkosi</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="78"/>
@@ -2543,22 +2548,22 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="79"/>
         <source>Using a hardware device.</source>
-        <translation type="unfinished"></translation>
+        <translation>Käytetään laitelompakkoa.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="93"/>
         <source>Create a new wallet from device.</source>
-        <translation type="unfinished"></translation>
+        <translation>Luo uusi lompakko laitteesta.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="106"/>
         <source>Restore a wallet from device. Use this if you used your hardware wallet before.</source>
-        <translation type="unfinished"></translation>
+        <translation>Palauta lompakko laitteesta. Käytä tätä jos käytit laitelompakkoasi aiemmin.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="125"/>
         <source>Wallet creation date as `YYYY-MM-DD` or restore height</source>
-        <translation type="unfinished"></translation>
+        <translation> Lompakon luontipäivämäärä muodossa `VVVV-KK-PP` (V = vuosi, K = kuukausi, P = päivä) tai palautuskorkeus.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="128"/>
@@ -2573,18 +2578,18 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="153"/>
         <source>Subaddress lookahead (optional)</source>
-        <translation type="unfinished"></translation>
+        <translation>Aliosoitteen lookahead (vapaavalintainen)</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="163"/>
         <location filename="../wizard/WizardCreateDevice1.qml" line="232"/>
         <source>Error writing wallet from hardware device. Check application logs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Virhe kirjottaessa lompakkoa laitelompakosta. Tarkista ohjelman logitiedostot.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="186"/>
         <source>Back to menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Takaisin valikkoon</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="187"/>
@@ -2602,7 +2607,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardCreateWallet1.qml" line="64"/>
         <source>Creates a new wallet on this computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Luo uuden lompakon tässä tietokoneessa.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet1.qml" line="92"/>
@@ -2617,17 +2622,17 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardCreateWallet1.qml" line="152"/>
         <source>Wallet restore height</source>
-        <translation type="unfinished"></translation>
+        <translation>Lompakon palautuskorkeus</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet1.qml" line="187"/>
         <source>Should you restore your wallet in the future, specifying this block number will recover your wallet quicker.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jos palautat lompakkosi tulevaisuudessa, voit nopeuttaa lompakkosi palautusta antamalla tämän blokin numeron.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet1.qml" line="195"/>
         <source>Back to menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Takaisin valikkoon</translation>
     </message>
 </context>
 <context>
@@ -2635,7 +2640,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardCreateWallet2.qml" line="80"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Etäsolmun hakeminen kolmannen osapuolen palvelimelta epäonnistui.</translation>
     </message>
 </context>
 <context>
@@ -2643,12 +2648,12 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardCreateWallet3.qml" line="59"/>
         <source>Daemon settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Daemonin asetukset</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet3.qml" line="60"/>
         <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jotta voit kommunikoida Monero-verkon kanssa, lompakkosi tulee olla yhdistettynä Monero-solmuun. Parhaan yksityisyyden takaamiseksi on suositeltua käyttää omaa solmua.</translation>
     </message>
 </context>
 <context>
@@ -2656,7 +2661,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardCreateWallet4.qml" line="60"/>
         <source>You&apos;re all set up!</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaikki valmista!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet4.qml" line="61"/>
@@ -2666,7 +2671,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardCreateWallet4.qml" line="68"/>
         <source>Open wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa lompakko</translation>
     </message>
 </context>
 <context>
@@ -2679,7 +2684,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="75"/>
         <source>Blockchain location (optional)</source>
-        <translation type="unfinished"></translation>
+        <translation>Lohkoketjun sijainti (vapaavalintainen)</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="77"/>
@@ -2694,12 +2699,12 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="95"/>
         <source>Bootstrap node</source>
-        <translation type="unfinished"></translation>
+        <translation>Esilataa solmu</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="121"/>
         <source>Additionally, you may specify a bootstrap node to use Monero immediately.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihtoehtoisesti, voit määrittää bootstrap solmun käyttääksesi Moneroa heti.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="175"/>
@@ -2712,7 +2717,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardHome.qml" line="61"/>
         <source>Welcome to Monero.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tervetuloa Moneroon.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="66"/>
@@ -2722,17 +2727,17 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardHome.qml" line="67"/>
         <source>Choose this option if this is your first time using Monero.</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse tämä vaihtoehto jos tämä on ensimmäinen kertasi kun käytät Moneroa.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="87"/>
         <source>Create a new wallet from hardware</source>
-        <translation type="unfinished"></translation>
+        <translation>Luo uusi lompakko laitteesta</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="88"/>
         <source>Connect your hardware wallet to create a new Monero wallet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Yhdistä laitelompakkosi tehdäksesi uuden Monero-lompakon.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="107"/>
@@ -2742,7 +2747,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardHome.qml" line="108"/>
         <source>Import an existing .keys wallet file from your computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuo olemassa oleva .keys lompakko-tiedosto tietokoneeltasi.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="126"/>
@@ -2752,17 +2757,17 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardHome.qml" line="127"/>
         <source>Enter your private keys or 25-word mnemonic seed to restore your wallet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Syötä yksityiset avaimesi tai käytä 25 sanaista mnemonic-siementäsi palauttaaksesi lompakkosi.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="143"/>
         <source>Change wallet mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda lompakon tilaa</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="154"/>
         <source>Change language</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda kieltä</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="169"/>
@@ -2772,12 +2777,12 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardHome.qml" line="190"/>
         <source>Change Network:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda verkkoa:</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="219"/>
         <source>Number of KDF rounds:</source>
-        <translation type="unfinished"></translation>
+        <translation>KDF-kierrosten määrä:</translation>
     </message>
 </context>
 <context>
@@ -2785,12 +2790,12 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardLang.qml" line="73"/>
         <source>Language settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Kieliasetukset</translation>
     </message>
     <message>
         <location filename="../wizard/WizardLang.qml" line="102"/>
         <source>Change the language of the Monero GUI.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda Monero GUI:n kieli.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardLang.qml" line="197"/>
@@ -2808,12 +2813,12 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardLanguage.qml" line="161"/>
         <source>Language</source>
-        <translation type="unfinished">Kieli</translation>
+        <translation>Kieli</translation>
     </message>
     <message>
         <location filename="../wizard/WizardLanguage.qml" line="171"/>
         <source>Continue</source>
-        <translation type="unfinished">Jatka</translation>
+        <translation>Jatka</translation>
     </message>
 </context>
 <context>
@@ -2821,32 +2826,32 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="61"/>
         <source>About the bootstrap mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Tietoa bootstrap-tilasta</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="72"/>
         <source>This mode will use a remote node whilst also syncing the blockchain. This is different from the first menu option (Simple mode), since it will only use the remote node until the blockchain is fully synced locally. It is a reasonable tradeoff for most people who care about privacy but also want the convenience of an automatic fallback option.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tämä tila käyttää etäsolmua samalla aikaa kun lohkoketjua synkronoidaan. Tämä poikkeaa ensimmäisestä vaihtoehdosta (Yksinkertainen tila) siten, että Yksinkertaisessa tilassa käytetään etäsolmua vasta sitten, kun koko lohkoketju on synkronoitu lokaalisti. Tämä tila on kohtuullinen kompromissi useimmille ihmisille, jotka välittävät yksityisyydestä, mutta haluavat myös automaattisen varavaihtoehdon.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="84"/>
         <source>Temporary use of remote nodes is useful in order to use Monero immediately (hence the name bootstrap), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
-        <translation type="unfinished"></translation>
+        <translation>Etäsolmujen väliaikainen käyttö on hyödyllistä, jos haluat käyttää Moneroa heti (tästä tulee nimi bootstrap). Huomio kuitenkin, että etäsolmua käyttäessä solmut voivat jäljittää IP-osoitteesi, palautuskorkeutesi ja blokkiin liittyvät pyyntötiedot sekä lähettää sinulle väärää tietoa saadakseen tietoa transaktioista joita teet.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="97"/>
         <source>Remain aware of these limitations. &lt;b&gt;Users who prioritize privacy and decentralization must use a full node instead&lt;/b&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pysy tietoisena näistä rajoituksista. &lt;b&gt;Käyttäjät, jotka priorisoivat yksityisyyttä ja hajautusta, tulee käyttää kokonaista solmua&lt;/b&gt;.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="101"/>
         <source>For enhanced node performance you may specify your region:</source>
-        <translation type="unfinished"></translation>
+        <translation>Parantaaksesi solmun suorituskykyä voit valita alueesi:</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="147"/>
         <source>I understand the privacy implications of using a third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ymmärrän vaikutukset yksityisyyteeni käyttäessäni kolmannen osapuolen palvelinta.</translation>
     </message>
 </context>
 <context>
@@ -2854,32 +2859,32 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="61"/>
         <source>About the simple mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Tietoa yksinkertaisesta tilasta.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="72"/>
         <source>This mode is ideal for managing small amounts of Monero. You have access to basic features for making and managing transactions. It will automatically connect to the Monero network so you can start using Monero immediately.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tämä tila on ideaali pienten summien hallintaan. Sinulla on pääsy perusominaisuuksiin, kuten transaktioiden tekoon ja hallintaan. Voit käyttää Moneroa heti, sillä tässä tilassa Monero-verkkoon yhdistetään automaattisesti käyttäen etäsolmua.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="85"/>
         <source>Remote nodes are useful if you are not able/don&apos;t want to download the whole blockchain, but be advised that malicious remote nodes could compromise some privacy. They could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
-        <translation type="unfinished"></translation>
+        <translation>Etäsolmut ovat hyödyllisiä jos et halua tai et voi ladata koko lohkoketjua. Mutta huomioithan, että haitalliset etäsolmut voivat vaarantaa hieman yksityisyyttäsi. Etäsolmun ylläpitäjät voivat jäljittää IP-osoitteesi, jäljittää palautuskorkeutesi ja blokkiin liittyvät pyyntötiedot sekä lähettää sinulle väärää tietoa saadakseen tietoa transaktioista joita teet.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="100"/>
         <source>Remain aware of these limitations. &lt;b&gt;Users who prioritize privacy and decentralization must use a full node instead&lt;/b&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pysy tietoisena näistä rajoituksista. &lt;b&gt;Käyttäjät, jotka priorisoivat yksityisyyttä ja hajautusta, tulee käyttää kokonaista solmua&lt;/b&gt;.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="104"/>
         <source>For enhanced node performance you may specify your region:</source>
-        <translation type="unfinished"></translation>
+        <translation>Parantaaksesi solmun suorituskykyä voit valita alueesi:</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="150"/>
         <source>I understand the privacy implications of using a third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation> Ymmärrän vaikutukset yksityisyyteeni käyttäessäni kolmannen osapuolen palvelinta.</translation>
     </message>
 </context>
 <context>
@@ -2887,12 +2892,12 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="61"/>
         <source>Mode selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilan valinta.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="62"/>
         <source>Please select the statement that best matches you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse ilmaisu, joka kuvaa sinua parhaiten.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="68"/>
@@ -2903,12 +2908,12 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="71"/>
         <source>Easy access to sending, receiving and basic functionality.</source>
-        <translation type="unfinished"></translation>
+        <translation>Helppo pääsy lähettämiseen, vastaanottamiseen ja perusominaisuuksiin.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="102"/>
         <source>Easy access to sending, receiving and basic functionality. The blockchain is downloaded to your computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Helppo pääsy lähettämiseen, vastaanottamiseen ja perusominaisuuksiin. Lohkoketju ladataan tietokoneellesi.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="128"/>
@@ -2918,12 +2923,12 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="129"/>
         <source>Includes extra features like mining and message verification. The blockchain is downloaded to your computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisältää lisätoimintoja, kuten louhinnan ja viestin varmistamisen. Lohkoketju ladataan tietokoneellesi.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="141"/>
         <source>Change language</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda kieli</translation>
     </message>
 </context>
 <context>
@@ -2931,12 +2936,12 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardNav.qml" line="43"/>
         <source>Previous</source>
-        <translation type="unfinished"></translation>
+        <translation>Edellinen</translation>
     </message>
     <message>
         <location filename="../wizard/WizardNav.qml" line="44"/>
         <source>Next</source>
-        <translation type="unfinished"></translation>
+        <translation>Seuraava</translation>
     </message>
 </context>
 <context>
@@ -2949,12 +2954,12 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="68"/>
         <source>Import an existing .keys wallet file from your computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuo olemassa oleva .keys lompakko-tiedosto tietokoneeltasi.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="80"/>
         <source>Recently opened</source>
-        <translation type="unfinished"></translation>
+        <translation>Äskettäin avatut</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="131"/>
@@ -2974,17 +2979,17 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="309"/>
         <source>Browse filesystem</source>
-        <translation type="unfinished"></translation>
+        <translation>Selaa tiedostojärjestelmää</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="289"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Etäsolmun hakeminen kolmannen osapuolen palvelimelta epäonnistui.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="308"/>
         <source>Back to menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Takaisin valikkoon</translation>
     </message>
 </context>
 <context>
@@ -2997,7 +3002,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardRestoreWallet1.qml" line="109"/>
         <source>Restore wallet from keys or mnemonic seed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Palauta lompakko avaimillasi tai mnemonic siemenellä.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet1.qml" line="123"/>
@@ -3012,7 +3017,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardRestoreWallet1.qml" line="149"/>
         <source>Restore from QR Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Palauta QR-koodista</translation>
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet1.qml" line="214"/>
@@ -3037,7 +3042,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardRestoreWallet1.qml" line="262"/>
         <source>Wallet creation date as `YYYY-MM-DD` or restore height</source>
-        <translation type="unfinished"></translation>
+        <translation>Lompakon luontipäivämäärä muodossa `VVVV-KK-PP` (V = vuosi, K = kuukausi, P = päivä) tai palautuskorkeus.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet1.qml" line="265"/>
@@ -3047,7 +3052,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardRestoreWallet1.qml" line="286"/>
         <source>Back to menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Takaisin valikkoon</translation>
     </message>
 </context>
 <context>
@@ -3055,7 +3060,7 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardRestoreWallet2.qml" line="79"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Etäsolmun hakeminen kolmannen osapuolen palvelimelta epäonnistui.</translation>
     </message>
 </context>
 <context>
@@ -3063,14 +3068,16 @@ your input may be required.</source>
     <message>
         <location filename="../wizard/WizardRestoreWallet3.qml" line="67"/>
         <source>Daemon settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Daemonin asetukset</translation>
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet3.qml" line="68"/>
         <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.
 
 If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jotta voit kommunikoida Monero-verkon kanssa, lompakkosi tulee olla yhdistettynä Monero-solmuun. Parhaan yksityisyyden takaamiseksi on suositeltua käyttää omaa solmua.
+
+Jos sinulla ei ole mahdollisuutta käyttää omaa solmua, sinulla on mahdollisuus yhdistää etäsolmuun.</translation>
     </message>
 </context>
 <context>
@@ -3078,7 +3085,7 @@ If you don&apos;t have the option to run your own node, there&apos;s an option t
     <message>
         <location filename="../wizard/WizardRestoreWallet4.qml" line="60"/>
         <source>You&apos;re all set up!</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaikki valmista!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet4.qml" line="61"/>
@@ -3116,7 +3123,7 @@ If you don&apos;t have the option to run your own node, there&apos;s an option t
     <message>
         <location filename="../wizard/WizardSummary.qml" line="77"/>
         <source>Bootstrap address</source>
-        <translation type="unfinished"></translation>
+        <translation>Bootstrap-osoite</translation>
     </message>
     <message>
         <location filename="../wizard/WizardSummary.qml" line="83"/>
@@ -3134,7 +3141,7 @@ If you don&apos;t have the option to run your own node, there&apos;s an option t
     <message>
         <location filename="../wizard/WizardWalletInput.qml" line="87"/>
         <source>Wallet location</source>
-        <translation type="unfinished"></translation>
+        <translation>Lompakon sijainti</translation>
     </message>
     <message>
         <location filename="../wizard/WizardWalletInput.qml" line="93"/>
@@ -3263,22 +3270,22 @@ Fee: </source>
     <message>
         <location filename="../main.qml" line="314"/>
         <source>Closing wallet...</source>
-        <translation type="unfinished"></translation>
+        <translation>Suljetaan lompakkoa...</translation>
     </message>
     <message>
         <location filename="../main.qml" line="440"/>
         <source>Balance (#%1%2)</source>
-        <translation type="unfinished"></translation>
+        <translation>Saldo (#%1%2)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="519"/>
         <source>Please proceed to the device...</source>
-        <translation type="unfinished"></translation>
+        <translation>Jatka laitteeseesi...</translation>
     </message>
     <message>
         <location filename="../main.qml" line="531"/>
         <source>Opening wallet ...</source>
-        <translation type="unfinished"></translation>
+        <translation>Avataan lompakkoa ...</translation>
     </message>
     <message>
         <location filename="../main.qml" line="556"/>
