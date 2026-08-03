@@ -136,6 +136,19 @@ Rectangle {
             }
         }
 
+        MoneroComponents.StandardDropdown {
+            id: paletteDropdown
+            Layout.leftMargin: 12
+            Layout.topMargin: 6
+            Layout.maximumWidth: 200
+            labelText: qsTr("Palette") + translationManager.emptyString
+            labelFontSize: 14
+            dataModel: paletteModel
+            onChanged: {
+                persistentSettings.palette = paletteModel.get(currentIndex).data;
+            }
+        }
+
 
         MoneroComponents.CheckBox {
             checked: persistentSettings.askPasswordBeforeSending
@@ -384,7 +397,19 @@ Rectangle {
             i += 1;
         }
 
+        // Palette names are proper nouns, so they are not run through qsTr.
+        var palettes = MoneroComponents.Style.paletteList;
+        for (var p = 0; p < palettes.length; ++p) {
+            paletteModel.append({"column1": MoneroComponents.Style.paletteName(palettes[p]), "data": palettes[p]});
+            if (palettes[p] === persistentSettings.palette)
+                paletteDropdown.currentIndex = p;
+        }
+
         console.log('SettingsLayout loaded');
+    }
+
+    ListModel {
+        id: paletteModel
     }
 }
 

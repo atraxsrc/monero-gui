@@ -49,7 +49,7 @@ Window {
         id: rect
         width: content.width + 12
         height: content.height + 17
-        color: "#FF6C3C"
+        color: MoneroComponents.Style.accentColor
         //radius: 3
 
         Image {

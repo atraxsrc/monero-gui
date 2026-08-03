@@ -116,11 +116,27 @@ Rectangle {
 
                 Image {
                     id: card
-                    visible: !isOpenGL || MoneroComponents.Style.blackTheme
+                    visible: (!isOpenGL || MoneroComponents.Style.blackTheme) && !cardTint.active
                     width: 260
                     height: 135
                     fillMode: Image.PreserveAspectFit
                     source: MoneroComponents.Style.blackTheme ? "qrc:///images/card-background-black" + (currentAccountIndex % MoneroComponents.Style.accountColors.length) + ".png" : "qrc:///images/card-background-white.png"
+                }
+
+                // The card artwork is a bitmap, so palettes shift its hue rather than
+                // recolour it. Colorize keeps the gradient and the M watermark, and the
+                // per-account variation survives because each card ships its own artwork.
+                Colorize {
+                    id: cardTint
+                    property bool active: isOpenGL
+                                          && MoneroComponents.Style.blackTheme
+                                          && MoneroComponents.Style.cardHue !== null
+                    visible: active
+                    anchors.fill: card
+                    source: card
+                    hue: MoneroComponents.Style.cardHue !== null ? MoneroComponents.Style.cardHue : 0.0
+                    saturation: MoneroComponents.Style.cardSaturation
+                    lightness: MoneroComponents.Style.cardLightness
                 }
 
                 DropShadow {

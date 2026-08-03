@@ -2,9 +2,15 @@ pragma Singleton
 
 import QtQuick 2.5
 
+import "../js/Palettes.js" as Palettes
+
 QtObject {
-    // Theme selection: "system" follows the OS preference, "light" and "dark" force one.
+    // Mode: "system" follows the OS preference, "light" and "dark" force one.
     property string theme: "dark"
+
+    // Palette: which colour set to use. Independent of mode - a palette supplies
+    // both a light and a dark variant, and the mode above picks between them.
+    property string palette: "monero"
 
     // Reported by the ColorScheme helper; only consulted when theme is "system".
     property bool systemPrefersDark: typeof colorScheme !== "undefined" ? colorScheme.prefersDark : true
@@ -13,6 +19,19 @@ QtObject {
     readonly property bool blackTheme: theme === "light" ? false :
                                        theme === "dark" ? true :
                                        systemPrefersDark
+
+    readonly property var paletteList: Palettes.order
+    readonly property var activePalette: Palettes.all[palette] !== undefined ? Palettes.all[palette]
+                                                                             : Palettes.all["monero"]
+    // _b / _w stay separately addressable because ColorTransition needs both endpoint
+    // colours at once (MiddlePanel.qml, LeftPanel.qml, TextPlain.qml read them directly).
+    readonly property var _b: activePalette.dark
+    readonly property var _w: activePalette.light
+
+    function paletteName(key) {
+        return Palettes.all[key] !== undefined ? Palettes.all[key].name : key;
+    }
+
     property QtObject fontMedium: FontLoader { id: _fontMedium; source: "qrc:/fonts/Roboto-Medium.ttf"; }
     property QtObject fontBold: FontLoader { id: _fontBold; source: "qrc:/fonts/Roboto-Bold.ttf"; }
     property QtObject fontLight: FontLoader { id: _fontLight; source: "qrc:/fonts/Roboto-Light.ttf"; }
@@ -92,127 +111,132 @@ QtObject {
     property string historyHeaderTextColor: blackTheme ? _b_historyHeaderTextColor : _w_historyHeaderTextColor
     property var accountColors: blackTheme ? _b_accountColors : _w_accountColors
 
-    property string _b_defaultFontColor: "white"
-    property string _b_dimmedFontColor: "#BBBBBB"
-    property string _b_lightGreyFontColor: "#DFDFDF"
-    property string _b_errorColor: "#FA6800"
-    property string _b_textSelectionColor: "#BBBBBB"
-    property string _b_textSelectedColor: "white"
+    // Resolved from the active palette. Names are unchanged, so the direct
+    // _b_/_w_ references in MiddlePanel.qml, LeftPanel.qml and TextPlain.qml
+    // keep working.
 
-    property string _b_inputBoxBackground: "black"
-    property string _b_inputBoxBackgroundDisabled: Qt.rgba(255, 255, 255, 0.10)
-    property string _b_inputBoxBackgroundError: "#FFDDDD"
-    property string _b_inputBoxColor: "white"
-    property string _b_legacy_placeholderFontColor: "#BABABA"
-    property string _b_inputBorderColorActive: Qt.rgba(255, 255, 255, 0.38)
-    property string _b_inputBorderColorInActive: Qt.rgba(255, 255, 255, 0.32)
-    property string _b_inputBorderColorInvalid: Qt.rgba(255, 0, 0, 0.40)
+    property string _b_defaultFontColor: _b.defaultFontColor
+    property string _w_defaultFontColor: _w.defaultFontColor
+    property string _b_dimmedFontColor: _b.dimmedFontColor
+    property string _w_dimmedFontColor: _w.dimmedFontColor
+    property string _b_lightGreyFontColor: _b.lightGreyFontColor
+    property string _w_lightGreyFontColor: _w.lightGreyFontColor
+    property string _b_errorColor: _b.errorColor
+    property string _w_errorColor: _w.errorColor
+    property string _b_textSelectionColor: _b.textSelectionColor
+    property string _w_textSelectionColor: _w.textSelectionColor
+    property string _b_textSelectedColor: _b.textSelectedColor
+    property string _w_textSelectedColor: _w.textSelectedColor
+    property string _b_inputBoxBackground: _b.inputBoxBackground
+    property string _w_inputBoxBackground: _w.inputBoxBackground
+    property string _b_inputBoxBackgroundDisabled: _b.inputBoxBackgroundDisabled
+    property string _w_inputBoxBackgroundDisabled: _w.inputBoxBackgroundDisabled
+    property string _b_inputBoxBackgroundError: _b.inputBoxBackgroundError
+    property string _w_inputBoxBackgroundError: _w.inputBoxBackgroundError
+    property string _b_inputBoxColor: _b.inputBoxColor
+    property string _w_inputBoxColor: _w.inputBoxColor
+    property string _b_legacy_placeholderFontColor: _b.legacy_placeholderFontColor
+    property string _w_legacy_placeholderFontColor: _w.legacy_placeholderFontColor
+    property string _b_inputBorderColorActive: _b.inputBorderColorActive
+    property string _w_inputBorderColorActive: _w.inputBorderColorActive
+    property string _b_inputBorderColorInActive: _b.inputBorderColorInActive
+    property string _w_inputBorderColorInActive: _w.inputBorderColorInActive
+    property string _b_inputBorderColorInvalid: _b.inputBorderColorInvalid
+    property string _w_inputBorderColorInvalid: _w.inputBorderColorInvalid
+    property string _b_buttonBackgroundColor: _b.buttonBackgroundColor
+    property string _w_buttonBackgroundColor: _w.buttonBackgroundColor
+    property string _b_buttonBackgroundColorHover: _b.buttonBackgroundColorHover
+    property string _w_buttonBackgroundColorHover: _w.buttonBackgroundColorHover
+    property string _b_buttonBackgroundColorDisabled: _b.buttonBackgroundColorDisabled
+    property string _w_buttonBackgroundColorDisabled: _w.buttonBackgroundColorDisabled
+    property string _b_buttonBackgroundColorDisabledHover: _b.buttonBackgroundColorDisabledHover
+    property string _w_buttonBackgroundColorDisabledHover: _w.buttonBackgroundColorDisabledHover
+    property string _b_buttonInlineBackgroundColor: _b.buttonInlineBackgroundColor
+    property string _w_buttonInlineBackgroundColor: _w.buttonInlineBackgroundColor
+    property string _b_buttonInlineBackgroundColorHover: _b.buttonInlineBackgroundColorHover
+    property string _w_buttonInlineBackgroundColorHover: _w.buttonInlineBackgroundColorHover
+    property string _b_buttonTextColor: _b.buttonTextColor
+    property string _w_buttonTextColor: _w.buttonTextColor
+    property string _b_buttonTextColorDisabled: _b.buttonTextColorDisabled
+    property string _w_buttonTextColorDisabled: _w.buttonTextColorDisabled
+    property string _b_buttonSecondaryBackgroundColor: _b.buttonSecondaryBackgroundColor
+    property string _w_buttonSecondaryBackgroundColor: _w.buttonSecondaryBackgroundColor
+    property string _b_buttonSecondaryBackgroundColorHover: _b.buttonSecondaryBackgroundColorHover
+    property string _w_buttonSecondaryBackgroundColorHover: _w.buttonSecondaryBackgroundColorHover
+    property string _b_buttonSecondaryTextColor: _b.buttonSecondaryTextColor
+    property string _w_buttonSecondaryTextColor: _w.buttonSecondaryTextColor
+    property string _b_dividerColor: _b.dividerColor
+    property string _w_dividerColor: _w.dividerColor
+    property string _b_titleBarBackgroundGradientStart: _b.titleBarBackgroundGradientStart
+    property string _w_titleBarBackgroundGradientStart: _w.titleBarBackgroundGradientStart
+    property string _b_titleBarBackgroundGradientStop: _b.titleBarBackgroundGradientStop
+    property string _w_titleBarBackgroundGradientStop: _w.titleBarBackgroundGradientStop
+    property string _b_titleBarBackgroundBorderColor: _b.titleBarBackgroundBorderColor
+    property string _w_titleBarBackgroundBorderColor: _w.titleBarBackgroundBorderColor
+    property string _b_titleBarButtonHoverColor: _b.titleBarButtonHoverColor
+    property string _w_titleBarButtonHoverColor: _w.titleBarButtonHoverColor
+    property string _b_wizardBackgroundGradientStart: _b.wizardBackgroundGradientStart
+    property string _w_wizardBackgroundGradientStart: _w.wizardBackgroundGradientStart
+    property string _b_middlePanelBackgroundGradientStart: _b.middlePanelBackgroundGradientStart
+    property string _w_middlePanelBackgroundGradientStart: _w.middlePanelBackgroundGradientStart
+    property string _b_middlePanelBackgroundGradientStop: _b.middlePanelBackgroundGradientStop
+    property string _w_middlePanelBackgroundGradientStop: _w.middlePanelBackgroundGradientStop
+    property string _b_middlePanelBackgroundColor: _b.middlePanelBackgroundColor
+    property string _w_middlePanelBackgroundColor: _w.middlePanelBackgroundColor
+    property string _b_menuButtonFallbackBackgroundColor: _b.menuButtonFallbackBackgroundColor
+    property string _w_menuButtonFallbackBackgroundColor: _w.menuButtonFallbackBackgroundColor
+    property string _b_menuButtonGradientStart: _b.menuButtonGradientStart
+    property string _w_menuButtonGradientStart: _w.menuButtonGradientStart
+    property string _b_menuButtonGradientStop: _b.menuButtonGradientStop
+    property string _w_menuButtonGradientStop: _w.menuButtonGradientStop
+    property string _b_menuButtonTextColor: _b.menuButtonTextColor
+    property string _w_menuButtonTextColor: _w.menuButtonTextColor
+    property string _b_menuButtonImageRightColorActive: _b.menuButtonImageRightColorActive
+    property string _w_menuButtonImageRightColorActive: _w.menuButtonImageRightColorActive
+    property string _b_menuButtonImageRightColor: _b.menuButtonImageRightColor
+    property string _w_menuButtonImageRightColor: _w.menuButtonImageRightColor
+    property string _b_inlineButtonTextColor: _b.inlineButtonTextColor
+    property string _w_inlineButtonTextColor: _w.inlineButtonTextColor
+    property string _b_inlineButtonBorderColor: _b.inlineButtonBorderColor
+    property string _w_inlineButtonBorderColor: _w.inlineButtonBorderColor
+    property string _b_appWindowBackgroundColor: _b.appWindowBackgroundColor
+    property string _w_appWindowBackgroundColor: _w.appWindowBackgroundColor
+    property string _b_appWindowBorderColor: _b.appWindowBorderColor
+    property string _w_appWindowBorderColor: _w.appWindowBorderColor
+    property string _b_progressBarBackgroundColor: _b.progressBarBackgroundColor
+    property string _w_progressBarBackgroundColor: _w.progressBarBackgroundColor
+    property string _b_leftPanelBackgroundGradientStart: _b.leftPanelBackgroundGradientStart
+    property string _w_leftPanelBackgroundGradientStart: _w.leftPanelBackgroundGradientStart
+    property string _b_leftPanelBackgroundGradientStop: _b.leftPanelBackgroundGradientStop
+    property string _w_leftPanelBackgroundGradientStop: _w.leftPanelBackgroundGradientStop
+    property string _b_historyHeaderTextColor: _b.historyHeaderTextColor
+    property string _w_historyHeaderTextColor: _w.historyHeaderTextColor
 
-    property string _b_buttonBackgroundColor: "#FA6800"
-    property string _b_buttonBackgroundColorHover: "#E65E00"
-    property string _b_buttonBackgroundColorDisabled: "#707070"
-    property string _b_buttonBackgroundColorDisabledHover: "#808080"
-    property string _b_buttonInlineBackgroundColor: "#707070"
-    property string _b_buttonInlineBackgroundColorHover: "#808080"
-    property string _b_buttonTextColor: "white"
-    property string _b_buttonTextColorDisabled: "black"
-    property string _b_buttonSecondaryBackgroundColor: "#707070"
-    property string _b_buttonSecondaryBackgroundColorHover: "#808080"
-    property string _b_buttonSecondaryTextColor: "white"
-    property string _b_dividerColor: "white"
-    property real _b_dividerOpacity: 0.20
+    property real _b_dividerOpacity: _b.dividerOpacity
+    property real _w_dividerOpacity: _w.dividerOpacity
+    property bool _b_progressBarProgressTextBold: _b.progressBarProgressTextBold
+    property bool _w_progressBarProgressTextBold: _w.progressBarProgressTextBold
+    property var _b_accountColors: _b.accountColors
+    property var _w_accountColors: _w.accountColors
 
-    property string _b_titleBarBackgroundGradientStart: "#262626";
-    property string _b_titleBarBackgroundGradientStop: "#191919"
-    property string _b_titleBarBackgroundBorderColor: "#2f2f2f"
+    // Accent used by components that previously hardcoded Monero orange.
+    property string accentColor: blackTheme ? _b.accentColor : _w.accentColor
+
+    // Account card artwork tint. null means leave the stock artwork alone.
+    property var cardHue: blackTheme ? _b.cardHue : _w.cardHue
+    property real cardSaturation: blackTheme ? _b.cardSaturation : _w.cardSaturation
+    property real cardLightness: blackTheme ? _b.cardLightness : _w.cardLightness
+
     property string _b_titleBarLogoSource: "qrc:///images/titlebarLogo.png"
     property string _b_titleBarMinimizeSource: "qrc:///images/minimize.svg"
     property string _b_titleBarFullscreenSource: "qrc:///images/fullscreen.svg"
     property string _b_titleBarCloseSource: "qrc:///images/close.svg"
-    property string _b_titleBarButtonHoverColor: "#10FFFFFF"
-
-    property string _b_wizardBackgroundGradientStart: "#1e1e1e"
-    property string _b_middlePanelBackgroundGradientStart: "#232323"
-    property string _b_middlePanelBackgroundGradientStop: "#101010"
-    property string _b_middlePanelBackgroundColor: "#181818"
-    property string _b_menuButtonFallbackBackgroundColor: "#09FFFFFF"
-    property string _b_menuButtonGradientStart: "#11FFFFFF"
-    property string _b_menuButtonGradientStop: "#00000000"
-    property string _b_menuButtonTextColor: "white"
-    property string _b_menuButtonImageRightColorActive: "white"
-    property string _b_menuButtonImageRightColor: "white"
     property string _b_menuButtonImageRightSource: "qrc:///images/right.svg"
     property string _b_menuButtonImageDotArrowSource: "qrc:///images/arrow-right-medium-white.png"
-    property string _b_inlineButtonTextColor: "white"
-    property string _b_inlineButtonBorderColor: "black"
-    property string _b_appWindowBackgroundColor: "white"
-    property string _b_appWindowBorderColor: "#313131"
-    property bool _b_progressBarProgressTextBold: true
-    property string _b_progressBarBackgroundColor: "#24FFFFFF"
-    property string _b_leftPanelBackgroundGradientStart: "#222222"
-    property string _b_leftPanelBackgroundGradientStop: "#1a1a1a"
-    property string _b_historyHeaderTextColor: "#C0C0C0"
-    property var _b_accountColors: ["#6E513C", "#842129", "#458421", "#742184", "#291DBE", "#846F21", "#217F84", "#696969"]
-
-    property string _w_defaultFontColor: "black"
-    property string _w_dimmedFontColor: "#3f3f3f"
-    property string _w_lightGreyFontColor: "#515151"
-    property string _w_errorColor: "#FA6800"
-    property string _w_textSelectionColor: "#BBBBBB"
-    property string _w_textSelectedColor: "black"
-
-    property string _w_inputBoxBackground: "white"
-    property string _w_inputBoxBackgroundDisabled: Qt.rgba(0, 0, 0, 0.20)
-    property string _w_inputBoxBackgroundError: "#FFDDDD"
-    property string _w_inputBoxColor: "black"
-    property string _w_legacy_placeholderFontColor: "#BABABA"
-    property string _w_inputBorderColorActive: Qt.rgba(0, 0, 0, 0.30)
-    property string _w_inputBorderColorInActive: Qt.rgba(0, 0, 0, 0.16)
-    property string _w_inputBorderColorInvalid: Qt.rgba(255, 0, 0, 0.50)
-
-    property string _w_buttonBackgroundColor: "#FA6800"
-    property string _w_buttonBackgroundColorHover: "#E65E00"
-    property string _w_buttonBackgroundColorDisabled: "#bbbbbb"
-    property string _w_buttonBackgroundColorDisabledHover: "#D1D1D1"
-    property string _w_buttonInlineBackgroundColor: "#d9d9d9"
-    property string _w_buttonInlineBackgroundColorHover: "#C8C8C8"
-    property string _w_buttonTextColor: "white"
-    property string _w_buttonTextColorDisabled: "black"
-    property string _w_buttonSecondaryBackgroundColor: "#d9d9d9"
-    property string _w_buttonSecondaryBackgroundColorHover: "#C8C8C8"
-    property string _w_buttonSecondaryTextColor: "#4d4d4d"
-    property string _w_dividerColor: "black"
-    property real _w_dividerOpacity: 0.20
-
-    property string _w_titleBarBackgroundGradientStart: "#fcfcfc"
-    property string _w_titleBarBackgroundGradientStop: "#FBFBFB"
-    property string _w_titleBarBackgroundBorderColor: "#DEDEDE"
     property string _w_titleBarLogoSource: "qrc:///images/themes/white/titlebarLogo.png"
     property string _w_titleBarMinimizeSource: "qrc:///images/themes/white/minimize.svg"
     property string _w_titleBarFullscreenSource: "qrc:///images/themes/white/fullscreen.svg"
     property string _w_titleBarCloseSource: "qrc:///images/themes/white/close.svg"
-    property string _w_titleBarButtonHoverColor: "#11000000"
-
-    property string _w_wizardBackgroundGradientStart: "white"
-    property string _w_middlePanelBackgroundGradientStart: "white"
-    property string _w_middlePanelBackgroundGradientStop: "#ededed"
-    property string _w_middlePanelBackgroundColor: "#f5f5f5"
-    property string _w_menuButtonFallbackBackgroundColor: "#09000000"
-    property string _w_menuButtonGradientStart: "#08000000"
-    property string _w_menuButtonGradientStop: "#10FFFFFF"
-    property string _w_menuButtonTextColor: "#787878"
     property string _w_menuButtonImageRightSource: "qrc:///images/right.svg"
-    property string _w_menuButtonImageRightColorActive: "#FA6800"
-    property string _w_menuButtonImageRightColor: "#808080"
     property string _w_menuButtonImageDotArrowSource: "qrc:///images/arrow-right-medium-white.png"
-    property string _w_inlineButtonTextColor: "#4d4d4d"
-    property string _w_inlineButtonBorderColor: "transparent"
-    property string _w_appWindowBackgroundColor: "black"
-    property string _w_appWindowBorderColor: "#dedede"
-    property bool _w_progressBarProgressTextBold: false
-    property string _w_progressBarBackgroundColor: "#24000000"
-    property string _w_leftPanelBackgroundGradientStart: "white"
-    property string _w_leftPanelBackgroundGradientStop: "#f5f5f5"
-    property string _w_historyHeaderTextColor: "#515151"
-    property var _w_accountColors: ["#6E513C", "#6E513C", "#842129", "#458421", "#742184", "#291DBE", "#846F21", "#217F84", "#696969"]
 }
