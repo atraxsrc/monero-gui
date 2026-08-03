@@ -178,6 +178,7 @@
         <file>images/warning@2x.png</file>
         <file>js/Windows.js</file>
         <file>js/Utils.js</file>
+        <file>js/Palettes.js</file>
         <file>components/RadioButton.qml</file>
         <file>pages/settings/Settings.qml</file>
         <file>pages/settings/SettingsWallet.qml</file>

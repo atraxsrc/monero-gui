@@ -1510,6 +1510,7 @@ ApplicationWindow {
         property int lockOnUserInActivityInterval: 10  // minutes
         property bool blackTheme: true  // legacy, superseded by `theme`; kept in sync for downgrades
         property string theme: ""       // "system" | "light" | "dark"; empty means not migrated yet
+        property string palette: "monero"
         property bool checkForUpdates: true
         property bool autosave: true
         property int autosaveMinutes: 10
@@ -1559,6 +1560,13 @@ ApplicationWindow {
         property: "theme"
         value: persistentSettings.theme
         when: persistentSettings.theme !== ""
+    }
+
+    Binding {
+        target: MoneroComponents.Style
+        property: "palette"
+        value: persistentSettings.palette
+        when: persistentSettings.palette !== ""
     }
 
     // Keep the legacy key current so downgrading to an older release preserves the choice.
@@ -2049,7 +2057,7 @@ ApplicationWindow {
             property alias text: content.text
             width: content.width + 12
             height: content.height + 17
-            color: "#FF6C3C"
+            color: MoneroComponents.Style.accentColor
             //radius: 3
             visible:false;
 
